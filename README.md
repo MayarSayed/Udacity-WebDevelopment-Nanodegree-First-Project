@@ -1,4 +1,4 @@
-#Types of Horses
+# Types of Horses
 
 ## Table of Contents
 
