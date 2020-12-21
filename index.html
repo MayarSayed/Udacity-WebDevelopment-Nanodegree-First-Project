@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Horses</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Fira+Sans:900|Merriweather&display=swap" rel="stylesheet">  <!-- Load Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list"></ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1>Horses Types</h1>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="American Quarter Horse" data-nav="American Quarter Horse" class="your-active-class">
+      <div class="landing__container">
+        <h2>American Quarter Horse</h2>
+        <img src="images/americanHorse.webp" alt="American Horse">
+        <p>Embraced by beginners and professional equestrians all around the world, the American quarter horse is famous for its agility, docility, and athleticism. Originally bred from English thoroughbreds and Native American Chickasaw horses during the 1600s, it has the largest breed registry in the world. These horses are shining stars on the trail and in the show ring.</p>
+      </div>
+    </section>
+    <section id="Arabian" data-nav="Arabian">
+      <div class="landing__container">
+        <h2>Arabian</h2>
+        <img src="images/arabian.webp" alt="Arabian Horse">
+        <p>The Arabian has the oldest horse breed registry in the world. Its lineage goes as far back as 3000 B.C. In fact, every light horse breed, including Appaloosas, Morgans, and Andalusians, can trace their ancestry back to the Arabian. It can be a rather spirited horse breed, but it's also loving and loyal. </p>
+
+      </div>
+    </section>
+    <section id="Thoroughbred" data-nav="Thoroughbred">
+      <div class="landing__container">
+        <h2>Thoroughbred</h2>
+        <img src="images/thoroughbred.webp" alt="Thoroughbred Horse">
+        <p>Thoroughbreds are the most popular racing horse in North America. This breed is considered a "hot-blooded" horse, which means it's known for its agility, speed, and spirit. It's a fine multipurpose horse that often has a career in other equestrian competitions besides racing, such as dressage and jumping, or it lives its life as a companion animal.</p>
+      </div>
+    </section>
+
+    <section id="Draft Breeds" data-nav="Draft Breeds">
+      <div class="landing__container">
+        <h2>Draft Breeds</h2>
+        <img src="images/draftbreeds.webp" alt="Draft Breed Horse">
+        <p>Draft horses are cold-blooded, heavy horses known for doing work pulling heavy loads. Historically, they were also used in battle to carry the weight of heavily armored soldiers. These horses have thick coats and manes that enable them to endure cold weather, and they're not easily spooked. The Clydesdale, Percheron, Shire, and Belgian are some popular examples of these gentle giants. In addition, draft horse crossbreeds can be ideal first horses, as they're often docile and loving.</p>
+
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Udacity</p>
+  </footer>
+  <script src="js/app.js"></script>
+
+</body>
+</html>
